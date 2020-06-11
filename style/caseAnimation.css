@@ -1,0 +1,88 @@
+
+.main .rel {
+    position: relative;
+    width: 100%;
+    margin: 0 0 3vw;
+}
+
+.box .rel {
+    position: relative;
+    width: 100%;
+    margin: 0 0 3vw;
+}
+
+.box .text {
+    position: absolute;
+    width: 100%;
+}
+
+.main .text {
+    position: absolute;
+    width: 100%;
+}
+
+.section2 .text:first-of-type {
+    animation: h11First 7s step-start infinite;
+}
+
+.section2 .text:nth-of-type(2) {
+    animation: h11Second 7s step-start infinite;
+}
+
+.section2 .text:nth-of-type(3) {
+    animation: h11Third 7s step-start infinite;
+}
+
+@keyframes h11First {
+    0% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 1;
+    }
+}
+
+@keyframes h11Second {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes h11Third {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

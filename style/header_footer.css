@@ -1,0 +1,1064 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0;
+}
+
+a:active {
+
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.nav__container,
+.burger {
+    display: none;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+    font-size: 2.3vw;
+    font-family: 'Gotham-Bold';
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.h2 {
+    font-size: 2.3vw;
+    font-family: 'RunWild-Demo-2';
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    font-weight: normal;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.p {
+    font-size: 1.15vw;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+header {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 4.2vw;
+    position: relative;
+    z-index: 1060;
+}
+
+header .logo {
+    width: 9vw;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    width: 47%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    padding-top: 3%;
+    position: relative;
+    z-index: 1050;
+    margin-left: 3%;
+}
+
+.subMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.subMenu .subBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 18.9vw;
+    margin: 0 0 5vw;
+}
+
+.subBox .subIcon {
+    width: 1.7vw;
+    margin: 0 1vw 0 0;
+}
+
+.subBox .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.subBox h1 {
+    font-size: 1.1vw;
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+}
+
+.subBox p {
+    font-family: 'Helvetica', sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 0.9vw;
+    text-transform: none;
+    margin-top: 1vw;
+}
+
+.seeAll {
+    font-size: 0.75vw;
+    color: #EC008C;
+    font-family: 'GOTHAMROUNDED-BOOK';
+    border-bottom: 1px solid #EC008C;
+    padding: 0 0 0.3vw;
+}
+
+.seeAll img {
+    width: 30px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    width: 20%;
+    transition: 30s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:nth-of-type(1) {
+    width: 10%;
+}
+
+.dropdown:nth-of-type(2) {
+    width: 12%;
+}
+
+.dropdown:nth-of-type(3) {
+    width: 21%;
+}
+
+.dropdown:nth-of-type(4) {
+    width: 14%;
+}
+
+.dropdown:nth-of-type(5) {
+    width: 15%;
+}
+
+.navLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropdown:hover a {
+    text-decoration: none;
+}
+
+.dropdown img {
+    width: 0.7vw;
+    margin: 0;
+}
+
+.dropbtn {
+    font-family: 'AvenirMedium';
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.dropbtn:hover {
+    font-family: 'AvenirBlack';
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.dropdown-content .header {
+    background: red;
+    padding: 0.84vw;
+    color: white;
+}
+
+.subMenuBox {
+    width: 100%;
+    max-height: 1500px;
+    background-color: white;
+    border-bottom: 0.2vw solid #EC008C;
+    display: flex;
+    flex-direction: column;
+    padding: 4vw 18vw;
+    align-items: flex-end;
+}
+
+.searchBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding-top: 2%;
+}
+
+.searchBox .searchImg {
+    width: 1.6vw;
+    margin: 0 1vw 0 0;
+}
+
+.searchBox .searchInput {
+    width: 18.4vw;
+    /*    height: 2.8vw;*/
+    border: 1px solid #000000;
+    border-radius: 2vw;
+    font-size: 0.84vw;
+    font-family: 'GOTHAMROUNDED-BOOK';
+    color: black;
+    padding: 1vw 3vw;
+    background-color: transparent;
+}
+
+.searchBox .searchInput:focus {
+    outline: none;
+}
+
+
+.searchBox .searchInput::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+}
+
+
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 6% 8vw 1.9vw 11.4vw;
+}
+
+.footerBox {
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4vw;
+}
+
+.footerBox:first-of-type {
+    margin: 0;
+}
+
+.footerBox .boxLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footerBox .boxLeft .footerText {
+    color: black;
+    font-size: 1.25vw;
+    font-family: 'GOTHAMROUNDED-BOOK';
+    margin: 0.5vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 11.6vw;
+    padding: 0 2vw 0 0;
+    border-bottom: 1px solid black;
+}
+
+.footerBox .boxLeft .footerText:hover {
+    cursor: pointer;
+}
+
+.footerBox .boxLeft .footerText p {
+    font-size: 0.73vw;
+    width: 90%;
+    padding: 0 0 0.5vw;
+}
+
+.footerBox .footerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footerBox .footerMenu .clm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 4vw 0 0;
+}
+
+.footerBox .footerMenu .clm:last-of-type {
+    margin: 0;
+}
+
+.footerBox h1 {
+    font-size: 0.95vw;
+    letter-spacing: 0.1vw;
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+    margin: 0 0 1vw;
+}
+
+.footerBox .footerMenu .clm p {
+    font-size: 0.63vw;
+    font-family: 'GOTHAMROUNDED-BOOK';
+    line-height: 3;
+}
+
+.footerLogo {
+    width: 8.8vw;
+}
+
+footer .footerRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerRight h1 {
+    font-size: 0.83vw;
+    letter-spacing: 0.1vw;
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+}
+
+footer .footerRight .cml:first-of-type h1 {
+    padding-left: 0.3vw;
+    font-size: 0.83vw;
+    letter-spacing: 0.1vw;
+}
+
+footer .footerRight .cml {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer .inputBox,
+.footerBox .socBox {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .inputBox {
+    position: relative;
+    align-items: center;
+}
+
+.inputBox .email {
+    width: 24.85vw;
+    height: 3.1vw;
+    border: 1px solid #000000;
+    border-radius: 2vw;
+    font-size: 0.84vw;
+    font-family: 'GOTHAMROUNDED-BOOK';
+    color: black;
+    padding: 0 3vw;
+    outline: none;
+}
+
+.inputBox .email:active {
+    border: none;
+}
+
+.inputBox .email::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+}
+
+.inputBox .footerBtn {
+    width: 100%;
+    height: 100%;
+    font-size: 0.7vw;
+    font-family: 'Gotham-Bold';
+    border-radius: 2vw;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.17vw;
+    padding: 0 0vw 0 0.3vw;
+
+}
+
+footer .inputBox a {
+    position: absolute;
+    right: 2.5%;
+    width: 6.63vw;
+    height: 2vw;
+}
+
+.footerBox .socBox .blackBox {
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
+}
+
+.footerBox .socBox a {
+    margin: 0 0.7vw 0 0;
+}
+
+.footerBox .socBox .blackBox:hover {
+    cursor: pointer;
+}
+
+.footerBox .socBox .blackBox img {
+    max-width: 50%;
+    max-height: 60%;
+}
+
+.footerBox .socBox a:last-of-type {
+    margin: 0;
+}
+
+footer .footerRight .cml:first-of-type {
+    margin: 0 4vw 0 0;
+}
+
+footer .footerBox:last-of-type p {
+    text-align: right;
+    width: 100%;
+    font-size: 0.63vw;
+    font-family: 'Gotham_Rounded_Bold';
+}
+
+.footerArrow {
+    width: 1.5vw;
+    margin: 0 0 0.7vw;
+}
+
+.footerMenu p:hover {
+    cursor: pointer;
+}
+
+.modalMenu {
+    position: fixed;
+    top: 8.5vw;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.modal-open .modalMenu {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    pointer-events: none;
+}
+
+.modalMenu.fade .modal-dialog {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%)
+}
+
+.modalMenu.show .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 0;
+}
+
+.fade.show {
+    padding: 0;
+    margin: 0;
+}
+
+.modal-dialog-centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - (.5rem * 2));
+}
+
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    border: none;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.modal-backdrop.fade {
+    opacity: 0
+}
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+.modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem
+}
+
+.modal-header .close {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5
+}
+
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem
+}
+
+.modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef
+}
+
+.modal-footer > :not(:first-child) {
+    margin-left: .25rem
+}
+
+.modal-footer > :not(:last-child) {
+    margin-right: .25rem
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.section9 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 0 0;
+}
+
+.section9 .inputBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section9 .inputBox .email {
+    width: 51.4vw;
+    height: 5.2vw;
+    border: 1px solid #000000;
+    border-radius: 4vw;
+    font-size: 1.3vw;
+    font-family: 'GOTHAMROUNDED-BOOK';
+    color: black;
+    padding: 0 3vw;
+    outline: none;
+}
+
+
+.section9 .inputBox .email::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+}
+
+.section9 h1 {
+    text-align: center;
+    font-family: 'GothamRoundedMedium_21022';
+    text-transform: uppercase;
+    margin: 0 0 2vw;
+    letter-spacing: 0.4vw;
+}
+
+.section9 .inputBox .footerBtn {
+    width: 100%;
+    height: 100%;
+    font-size: 1.1vw;
+    font-family: 'Gotham-Bold';
+    padding: 0;
+    border-radius: 3vw;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.14vw;
+    box-shadow: 7px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section9 .inputBox a {
+    position: absolute;
+    right: 3%;
+    width: 12vw;
+    height: 3.4vw;
+}
+
+@media all and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .section9 .inputBox a {
+        position: absolute;
+        right: 3%;
+        width: 16vw;
+        height: 4.4vw;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    footer {
+        padding: 0 7% 3.9vw;
+    }
+
+    .footerBox:first-of-type {
+        margin: 0;
+    }
+
+    .footerBox .boxLeft .footerText p {
+        font-size: 1.73vw;
+        width: 100%;
+        padding: 0 0 0.5vw;
+    }
+
+    .footerBox .footerMenu .clm {
+        margin: 0 5vw 0 0;
+    }
+
+    .footerArrow {
+        width: 1.5vw;
+        margin: 0 0 0.7vw;
+    }
+
+    .footerBox .footerMenu .clm p {
+        font-size: 1vw;
+    }
+
+    .footerBox {
+        width: 100%;
+    }
+
+    .footerBox:first-of-type {
+        padding: 10% 0 0;
+    }
+
+    .footerBox h1 {
+        font-size: 1.5vw;
+    }
+
+    .footerBox .boxLeft .footerText {
+        margin: 1vw 0;
+        width: 22.6vw;
+    }
+
+    .inputBox .email {
+        width: 41.7vw;
+        height: 5.2vw;
+        border-radius: 3vw;
+        font-size: 1.4vw;
+        outline: none;
+    }
+
+    footer .footerBox:last-of-type p {
+        text-align: center;
+        font-size: 1.6vw;
+    }
+
+    footer .inputBox a {
+        right: 3%;
+        width: 10.63vw;
+        height: 3.45vw;
+    }
+
+    .inputBox .footerBtn {
+        font-size: 1.3vw;
+    }
+
+    .footerBox .socBox .blackBox {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .p {
+        font-size: 3.3vw;
+    }
+
+    .h1,
+    .h2 {
+        font-size: 4.2vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .darkBtn {
+        font-size: 2.7vw;
+        width: 28.7vw;
+        height: 8vw;
+    }
+
+    .whiteBtn {
+        font-size: 3vw;
+        width: 31.7vw;
+        height: 8vw;
+    }
+
+    .footerLogo {
+        width: 15.8vw;
+    }
+
+    .footerBox:nth-child(2) {
+        width: 100%;
+    }
+
+    footer .footerRight .cml:first-of-type h1,
+    .footerRight h1 {
+        padding-left: 0.3vw;
+        font-size: 1.5vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .section9 .inputBox .email {
+        width: 79.4vw;
+        height: 8.2vw;
+        border: 1px solid #000000;
+        border-radius: 7vw;
+        font-size: 2.3vw;
+        font-family: 'GOTHAMROUNDED-BOOK';
+        color: black;
+        padding: 0 3vw;
+        outline: none;
+    }
+
+
+
+    /* Colours */
+
+    .nav__container {
+        display: block;
+    }
+
+    .nav__container {
+        position: absolute;
+        top: 65%;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease;
+        background-color: white;
+        z-index: 5;
+    }
+
+    .nav__container.open {
+        max-height: 600px;
+    }
+
+    .nav .dropdown-toggle {
+        position: relative;
+    }
+
+    .nav .dropdown-toggle.open:before {
+        transform: rotate(225deg) translateY(-50%);
+    }
+
+    .nav .dropdown-toggle:before {
+        content: '';
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-left: 0;
+        border-top: 0;
+        position: absolute;
+        top: 50%;
+        margin-top: -6px;
+        transform: rotate(45deg) translateY(-50%);
+        right: 105px;
+    }
+
+    .nav .dropdown-menu {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav .dropdown-menu.open {
+        max-height: auto;
+    }
+
+    .nav .dropdown-menu a {
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+
+    .nav .dropdown-menu li:first-child {
+        padding-top: 10px;
+    }
+
+    .nav .dropdown-menu li:last-child {
+        padding-bottom: 10px;
+    }
+
+    .btn__toggle {
+        font-size: 9px;
+        line-height: 1em;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        color: black;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        padding-top: 27px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        z-index: 1;
+        background-color: transparent;
+    }
+
+    .btn__toggle.open span:nth-child(1),
+    .btn__toggle.open span:nth-child(4) {
+        opacity: 0;
+    }
+
+    .btn__toggle.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .btn__toggle.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .btn__toggle span {
+        display: block;
+        height: 2px;
+        width: 26px;
+        background: black;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .btn__toggle span:nth-child(1) {
+        top: 12px;
+    }
+
+    .btn__toggle span:nth-child(2),
+    .btn__toggle span:nth-child(3) {
+        top: 18px;
+    }
+
+    .btn__toggle span:nth-child(4) {
+        top: 25px;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .dropbtn {
+        font-size: 5vw;
+        margin: 0 0 2vw;
+        width: auto;
+        padding: 3vw 0 0;
+    }
+
+    .nav-pills {
+        padding: 5vw 0 9vw;
+        border-bottom: 0.2vw solid #EC008C;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .logo {
+        width: 18vw;
+    }
+
+    header {
+        padding: 7% 7% 0;
+        flex-wrap: wrap;
+    }
+
+    .searchBox {
+        width: 100%;
+    }
+
+    .searchBox .searchImg {
+        display: none;
+    }
+
+    .searchBox .searchInput {
+        width: 84%;
+        height: 6.8vw;
+        border-radius: 6vw;
+        font-size: 1.5vw;
+        padding: 0.5vw 4vw 0;
+        background-image: url(../img/search.png);
+        background-position: 95%;
+        background-repeat: no-repeat;
+        background-size: 4%;
+    }
+
+    .section9 {
+        padding: 13% 0 0;
+    }
+
+    .section9 .inputBox .footerBtn {
+        box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+    }
+
+}

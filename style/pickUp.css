@@ -1,0 +1,742 @@
+.containerBox {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.22vw solid #FF40B1;
+    border-bottom: 0.22vw solid #FF40B1;
+    padding: 6% 23.9%;
+}
+
+.containerBox .h1,
+.containerBox .h2 {
+    text-align: center;
+}
+
+.allPlans {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12% 0;
+}
+
+.planBox {
+    width: 40%;
+    height: 22.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 4.3%;
+    border-radius: 5vw;
+    margin: 0 0 11%;
+}
+
+.planBox:nth-of-type(3),
+.planBox:nth-of-type(4) {
+    margin: 0;
+}
+
+.planBox .num {
+    font-size: 1.3vw;
+    font-family: 'Gotham-Bold';
+    width: 48%;
+    height: 18%;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background-color: rgba(191, 191, 191, 0.4);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3.8% 0;
+}
+
+.planBox .h1 {
+    font-size: 1.7vw;
+    letter-spacing: 0.6vw;
+    text-align: center;
+}
+
+.planBox a {
+    width: 47%;
+    font-size: 0.9vw;
+    font-family: 'Gotham_Rounded_Bold';
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+}
+
+.allPlans a img {
+    width: 1vw;
+}
+
+#accordion {
+    width: 100%;
+    margin-top: 12%;
+}
+
+#accordion .card {
+    width: 100%;
+    border: none;
+}
+
+.card-header {
+    padding: 0 6.6%;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.1vw;
+    cursor: pointer;
+}
+
+#accordion .card .collapseTittle {
+    font-size: 1.25vw;
+    font-family: 'GOTHAMROUNDED-BOOK';
+    margin: 0;
+    padding: 0;
+
+}
+
+#accordion .card:nth-child(2n+1) {
+    background-color: #F0F0F0;
+}
+
+#accordion .card:nth-child(2) {
+    background-color: #FF40B1;
+}
+
+#accordion .card:nth-child(4) {
+    background-color: #FFFF00;
+}
+
+#accordion .card:nth-child(2) .card-body {
+    color: white;
+}
+
+.card span::after {
+    content: '+';
+    color: white;
+    font-size: 1.6vw;
+    padding: 0 0.6vw 0px;
+    border-radius: 50%;
+}
+
+.card .span::after {
+    content: '-';
+    color: white;
+    font-size: 1.6vw;
+    padding: 0 0.6vw 0px;
+    border-radius: 50%;
+}
+
+.card span {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 2.1vw;
+    height: 2.1vw;
+    display: flex;
+    justify-content: center;
+}
+
+.card .card-body {
+    font-size: 1.25vw;
+    padding: 0 6.6% 6.6%;
+    width: 91%;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.dropdown .dropbtn {
+    color: black !important;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+tr.collapse.show {
+    display: table-row;
+}
+
+tbody.collapse.show {
+    display: table-row-group;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity .15s linear
+}
+
+.fade.show {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+#exampleModal {
+    z-index: 1070;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+}
+
+.modalBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 44.2%;
+    position: relative;
+}
+
+.modalBox .planBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border-radius: 5vw;
+    margin: 0 0 11%;
+}
+
+#planBox {
+    height: 47vw;
+}
+
+.modal-content .h2 {
+    margin: 0 0 6vw;
+}
+
+.modalBox .planBox .h1,
+.planBox .h2 {
+    font-size: 2.1vw;
+    text-align: center;
+    margin: 0;
+}
+
+.modalBox .planBox .num {
+    font-size: 2vw;
+    width: 44%;
+    height: 11%;
+    padding: 3% 0;
+    margin: 0 0 2vw;
+}
+
+.priceBox {
+    width: 68.5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 6vw;
+    font-family: 'Gotham-Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 1.5vw;
+}
+
+.priceBox p {
+    border-bottom: 0.22vw solid #FF40B1;
+    text-align: center;
+    width: 66%;
+    padding: 3vw 0;
+}
+
+.modalBox .btnCont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 1.5vw;
+}
+
+.modalBox .planBox a {
+    width: 38%;
+    font-size: 1.4vw;
+    font-family: 'Gotham_Rounded_Bold';
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.1vw;
+}
+
+.modalBox .darkBtn {
+    height: 4.2vw;
+    width: 100%;
+    font-size: 1.06vw;
+}
+
+.modalBox .btnCont .btnCircle {
+    position: absolute;
+    right: 21%;
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+}
+
+.modal.fade .modal-dialog {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 8%;
+}
+
+.modal-dialog-centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - (.5rem * 2))
+}
+
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-clip: padding-box;
+    border: none;
+    border-radius: .3rem;
+    outline: 0
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.modal-backdrop.fade {
+    opacity: 0
+}
+
+.modal-backdrop.show {
+    opacity: .5
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+
+.modalBox .tittleS {
+    font-size: 1.6vw;
+    font-weight: lighter;
+    text-align: center;
+    padding: 2.5vw 0 3vw;
+}
+
+.modalBox .whiteCircle {
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    width: 11.6%;
+    height: 2.8vw;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.modalBox .whiteCircleReverce {
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    width: 11.6%;
+    height: 2.8vw;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#modal-xl {
+    border-top: 0.22vw solid #FF40B1;
+    top: 11.16vw;
+}
+
+.planBox .table {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.planBox .table .cmlLeft,
+.planBox .table .cmlRight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.planBox .table .cmlLeft {
+    border-right: 1px solid #707070;
+    width: 45%;
+}
+
+.planBox .table p {
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.planBox .table .cmlLeft p:nth-of-type(2n) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.planBox .table .cmlLeft p {
+    padding: 0 4.6vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.planBox .table .cmlRight p {
+    padding: 0 3.4% 0 0;
+    font-size: 1.6vw;
+    font-family: 'GothamHTF-Black';
+    text-transform: uppercase;
+    margin: 0 0 0 4%;
+}
+
+.planBox .table .cmlLeft img {
+    width: 38%;
+}
+
+.planBox .table .cmlRight div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.planBox .table .cmlRight div:nth-of-type(2n) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.planBox .table .cmlRight img {
+    width: 1vw;
+    margin: 0 8% 0 0;
+}
+
+.close {
+    background-color: black;
+    position: absolute;
+    color: white;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    left: 94%;
+    top: -1%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.close span {
+    font-size: 3vw;
+    font-weight: 100;
+    color: white;
+    padding: 0;
+    position: relative;
+    top: -0.3vw;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 100;
+}
+
+.p4 {
+    margin: 0 0 9%;
+}
+
+.modal-content .h1,
+.modal-content .h2 {
+    text-align: center;
+}
+
+
+.zeroThree {
+    background-color: #E8C9DF !important;
+}
+
+.circleL {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: #FF40B1;
+    position: relative;
+    left: -0.5vw;
+}
+
+footer {
+    padding: 6vw 8vw 1.9vw 11.4vw;
+}
+
+.section9 {
+    display: none;
+}
+
+@media all and (max-width:768px) {
+    footer {
+        padding: 0 7% 3.9vw;
+    }
+
+    .section9 {
+        display: flex;
+    }
+
+    .containerBox {
+        padding: 9.6% 11% 12.3% 11%;
+        border-top: none;
+    }
+
+    .planBox .num {
+        font-size: 2.3vw;
+    }
+
+    .planBox .h1,
+    .planBox .h2 {
+        font-size: 2.65vw;
+    }
+
+    .modalBox .tittleS {
+        padding: 4.5vw 0 6vw;
+    }
+
+
+    .planBox {
+        height: 36vw;
+        width: 43%;
+    }
+
+    .planBox a {
+        width: 52%;
+        font-size: 1.7vw;
+    }
+
+    #accordion .card .collapseTittle {
+        font-size: 2vw;
+    }
+
+    .card-header {
+        height: 8.1vw;
+    }
+
+    .card span {
+        width: 3.1vw;
+        height: 3.1vw;
+    }
+
+    .card span::after {
+        font-size: 2.2vw;
+    }
+
+    .card .card-body {
+        font-size: 2.3vw;
+        line-height: 1.4;
+        width: 93%;
+    }
+
+    .card .span::after {
+        content: '-';
+        font-size: 2.2vw;
+    }
+
+    .modalBox {
+        width: 47%;
+    }
+
+    .modalBox .planBox .num {
+        margin: 0 0 3vw;
+    }
+
+
+    .priceBox {
+        margin: 2.3vw 0 3vw;
+    }
+
+    .close span {
+        top: -0.3vw;
+    }
+
+    #accordion {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:425px) {
+    .card span::after {
+        content: '+';
+        position: relative;
+    }
+
+    .modalBox .whiteCircle,
+    .modalBox .whiteCircleReverce {
+        width: 14.6%;
+        height: 4.5vw;
+    }
+
+    #planBox {
+        height: auto;
+    }
+
+    .containerBox {
+        padding: 9.6% 7% 12.3% 10%;
+    }
+
+    .h1,
+    .h2 {
+        font-size: 4vw;
+    }
+
+    #accordion .card .collapseTittle {
+        font-size: 3vw;
+    }
+
+    .card-header {
+        height: 10.1vw;
+    }
+
+    .card span {
+        width: 5.1vw;
+        height: 5.1vw;
+    }
+
+    .card span::after {
+        font-size: 3.6vw;
+        top: 0.2vw;
+    }
+
+    .card .span::after {
+        content: '-';
+        font-size: 3.6vw;
+    }
+
+    .card .card-body {
+        font-size: 3vw;
+        line-height: 1.4;
+        font-family: 'GOTHAMROUNDED-BOOK';
+    }
+
+    .modalBox {
+        width: 72%;
+    }
+
+    .modalBox .planBox .num {
+        font-size: 3.6vw;
+    }
+
+    .modalBox .planBox .h1,
+    .planBox .h2 {
+        font-size: 5vw;
+    }
+
+    .priceBox {
+        font-size: 14vw;
+        margin: 4.3vw 0 5vw;
+    }
+
+    .modalBox .darkBtn {
+        height: 7vw;
+        font-size: 2.4vw;
+    }
+
+    .modalBox .planBox a {
+        width: 52%;
+    }
+
+    .modalBox .btnCont .btnCircle {
+        right: 17%;
+    }
+
+    .modalBox .tittleS {
+        font-size: 3vw;
+    }
+
+    .planBox .table .cmlRight p {
+        padding: 0 14.4% 0 0;
+        font-size: 2.6vw;
+    }
+
+    .planBox .table p {
+        height: 11.2vw;
+    }
+
+    .close {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .close span {
+        font-size: 6vw;
+        top: -0.5vw;
+    }
+
+
+
+}

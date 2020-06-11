@@ -1,0 +1,185 @@
+
+.main .rel {
+    position: relative;
+    width: 100%;
+    margin: 0 0 3vw;
+}
+
+.box .rel {
+    position: relative;
+    width: 100%;
+    margin: 0 0 3vw;
+}
+
+.box .text {
+    position: absolute;
+    width: 100%;
+}
+
+.main .text {
+    position: absolute;
+    width: 100%;
+}
+
+.section2 .main .text:first-of-type {
+    animation: h11First 9s step-start infinite;
+}
+
+.section2 .main .text:nth-of-type(2) {
+    animation: h11Second 9s step-start infinite;
+}
+
+.section2 .main .text:nth-of-type(3) {
+    animation: h11Third 9s step-start infinite;
+}
+.section2 .main .text:nth-of-type(4) {
+    animation: h11Fourth 9s step-start infinite;
+}
+.section2 .main .text:nth-of-type(5) {
+    animation: h11Fifth 9s step-start infinite;
+}
+.section2 .box .text:first-of-type {
+    animation: h11First 12s step-start infinite;
+}
+
+.section2 .box .text:nth-of-type(2) {
+    animation: h11Second 12s step-start infinite;
+}
+
+.section2 .box .text:nth-of-type(3) {
+    animation: h11Third 12s step-start infinite;
+}
+.section2 .box .text:nth-of-type(4) {
+    animation: h11Fourth 12s step-start infinite;
+}
+.section2 .box .text:nth-of-type(5) {
+    animation: h11Fifth 12s step-start infinite;
+}
+
+@keyframes h11First {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 1;
+    }
+}
+
+@keyframes h11Second {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes h11Third {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes h11Fourth {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes h11Fifth {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+

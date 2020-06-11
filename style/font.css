@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url("../Fonts/Avenir_LT_65_Medium.ttf");
+}
+
+@font-face {
+    font-family: 'AvenirBlack';
+    src: url("../Fonts/Avenir_LT_95_Black.ttf");
+}
+@font-face {
+    font-family: 'AvenirLTStd-Light_2';
+    src: url("../Fonts/AvenirLTStd-Light_2.otf");
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url("../Fonts/Gotham-Bold.otf");
+}
+@font-face {
+    font-family: 'GothamRoundedMedium_21022';
+    src: url("../Fonts/GothamRoundedMedium_21022.ttf");
+}
+@font-face {
+    font-family: 'GOTHAMROUNDED-BOOK';
+    src: url("../Fonts/GOTHAMROUNDED-BOOK.otf");
+}
+@font-face {
+    font-family: 'RunWild-Demo-2';
+    src: url("../Fonts/RunWild-Demo-2.ttf");
+}
+@font-face {
+    font-family: 'GothamHTF-Black';
+    src: url("../Fonts/GothamHTF-Black.otf");
+}
+@font-face {
+    font-family: 'Gotham_Rounded_Bold';
+    src: url("../Fonts/Gotham_Rounded_Bold.otf");
+}
+@font-face {
+    font-family: 'GothamRounded-BoldItalic';
+    src: url("../Fonts/GothamRounded-BoldItalic.otf");
+}
+/*
+@font-face {
+    font-family: 'Avenir LT 65 Medium';
+    src: url("../Fonts/Avenir_LT_65_Medium.ttf");
+}*/

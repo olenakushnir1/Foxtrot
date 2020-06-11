@@ -1,0 +1,324 @@
+header {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+}
+
+.h2 span {
+    font-family: 'GOTHAMROUNDED-BOOK';
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pinkPoint {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #FF40B1;
+    margin: 0 3vw 0 0;
+}
+
+.top {
+    background-color: #C4EBF7;
+    width: 100vw;
+    padding: 6% 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    font-size: 2.4vw;
+}
+
+.section1 {
+    width: 100%;
+    height: 143px;
+    position: relative;
+}
+
+.section1 .wave {
+    background-image: url(../img/sec5wave.png);
+    width: 100%;
+    height: 143px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: wave 3s linear infinite;
+}
+
+
+.section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16%;
+}
+
+.section2 .main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 0 0;
+}
+
+.section2 .main .h1,
+.section2 .main .h2 {
+    text-align: center;
+}
+
+.section2 .main img {
+    width: 41.5%;
+    margin-top: 8.8%;
+}
+
+.section2 .box {
+    border-top: 0.22vw solid #FF40B1;
+    width: 100%;
+    padding: 0 0 0 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3.6%;
+}
+
+.section2 .box:nth-of-type(2n+1) {
+    padding: 0;
+}
+
+.section2 .box:nth-of-type(2n+1) .text {
+    width: 67%;
+    margin-left: 8vw;
+
+}
+
+.section2 .box:nth-of-type(2n+1) .img {
+
+    margin: 4.8vw 0 0 3vw;
+}
+
+.section2 .box:nth-of-type(2n+1) .p {
+    width: 100%;
+}
+
+.section2 .box .text {
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    padding: 13% 0 0;
+}
+
+.section2 .p {
+    margin-top: 11%;
+    width: 96%;
+    height: 10vw;
+}
+
+
+.section2 .box .img {
+    width: 50%;
+    margin: 1.8vw 0 0;
+}
+
+.section2 .box .img img {
+    max-width: 100%;
+}
+
+.section2 .box .text div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFF00;
+    text-align: center;
+    padding: 6% 0;
+    margin-top: 1vw;
+}
+
+.section3 .start {
+    width: 72.6%;
+    background-color: white;
+    border-radius: 14vw;
+    padding: 5.7% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.2vw;
+}
+
+.section3 .start p {
+    font-size: 2vw;
+    color: black;
+    font-family: 'Gotham-Bold';
+    margin: 0 0 3%;
+    letter-spacing: 0.2vw;
+}
+
+.whiteBtn span {
+    font-size: 1.4vw;
+    background-size: 7%;
+}
+
+.whiteBtn {
+    height: 4.5vw;
+    width: 19.8vw;
+
+}
+
+.section9 {
+    display: none !important;
+}
+
+
+@media all and (max-width:768px) {
+    .whiteBtn span {
+        font-size: 1.8vw;
+        padding: 1vw 3.4vw 0 0;
+        background-position: 87%;
+    }
+
+    header {
+        box-shadow: none;
+        background-color: #C4EBF7 !important;
+    }
+
+    .nav-pills {
+        background-color: #C4EBF7 !important;
+    }
+
+    .section9 {
+        display: flex !important;
+        padding: 14% 0 0;
+    }
+
+    .section2 .box .img {
+        margin: 4.8vw 0 3vw;
+    }
+
+    .section2 .box .text {
+        padding: 12% 0 0;
+        width: 100%;
+    }
+
+    .section2 .p {
+        width: 96%;
+        height: 31vw;
+    }
+
+    .top {
+        padding: 11.5% 0 6%;
+    }
+
+    .section2 {
+        padding: 0 6%;
+    }
+
+    .section2 .main img {
+        margin-top: 15.8%;
+    }
+
+    .box .rel {
+        height: 50vw;
+        margin: 0 !important;
+    }
+
+    .section2 .box {
+        padding: 0 0 0 2vw;
+    }
+
+    .section2 .box:nth-of-type(2n+1) .text {
+        width: 100%;
+        margin-left: 5vw;
+    }
+
+    .section2 .box:nth-of-type(2n+1) .p {
+        width: 80%;
+    }
+
+    .top .h1 {
+        font-size: 3.4vw;
+    }
+
+    .section2 .box {
+        border-top: 0.22vw solid #FF40B1;
+        width: 100%;
+        padding: 0 0 0 6vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 8.6%;
+    }
+
+    .section2 .box:last-of-type {
+        border-bottom: 0.22vw solid #FF40B1;
+        padding: 0 0 12%;
+    }
+
+    .section3 {
+        margin: 0;
+        padding: 6% 0 10%;
+    }
+
+    .section3 .h1,
+    .section3 .h2 {
+        font-size: 3.2vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .whiteBtn {
+        height: 5.5vw;
+        width: 22.8vw;
+    }
+
+    w .whiteBtn span {
+        font-size: 1.8vw;
+        padding: 0.3vw 3.4vw 0 0;
+    }
+}
+
+@media all and (max-width:425px) {
+
+
+    .section1 .wave {
+        background-size: cover;
+        height: 52px;
+        animation: wave 5s linear infinite;
+    }
+
+    .section1 {
+        height: 52px;
+    }
+
+}
+
+@media all and (max-width:320px) {
+
+    .section2 {
+        padding: 0 8%;
+    }
+}

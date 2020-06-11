@@ -1,0 +1,249 @@
+header {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+    position: relative;
+    z-index: 3;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bluePoin {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #C2E8F4;
+    position: absolute;
+    left: -10%;
+}
+
+.top {
+    background-color: #FFFF00;
+    width: 100vw;
+    padding: 6% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1,
+.h2 {
+    text-align: center;
+}
+
+.top .h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+
+.section1 {
+    width: 100%;
+    height: 143px;
+    position: relative;
+}
+
+.section1 .wave {
+    background-image: url(../img/yellowWave.png);
+    width: 100%;
+    height: 143px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: wave 3s linear infinite;
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24%;
+    margin: -11% 0 0;
+}
+
+.section2 .box {
+    border-radius: 4vw;
+    width: 38%;
+    height: 21.5vw;
+    background-color: #F1DCEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 10%;
+    position: relative;
+}
+
+.section2 .box .card {
+    max-width: 15.3vw;
+    max-height: 100%;
+    height: 16.5vw;
+}
+
+.section2 .box a {
+    width: 100%;
+    height: 21%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF40B1;
+    font-size: 1.1vw;
+    font-family: 'Gotham-Bold';
+    border-radius: 0 0 4vw 4vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.section2 .box a:hover {
+    color: white;
+}
+
+.section2 .box a img {
+    width: 2vw;
+    height: 2vw;
+    background-color: black;
+    border-radius: 0.6vw;
+    margin: 0 0 0 2.1vw;
+}
+
+.bluePoint,
+.yellowPoint,
+.pinkPoint {
+    position: absolute;
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+}
+
+.bluePoint {
+    background-color: #C2E8F4;
+    margin: -3vw -1vw 0;
+}
+
+.box:nth-of-type(4) .bluePoint {
+    margin: -3vw 0 0 -2vw;
+}
+
+.yellowPoint {
+    background-color: #FFFF00;
+    margin: -3vw 0 0 -1vw;
+}
+
+.box:nth-of-type(2) .yellowPoint {
+    margin: -3vw 0 0 -2.5vw;
+}
+
+.box:nth-of-type(6) .yellowPoint {
+    margin: -3vw 0 0 -0.8vw;
+}
+
+.pinkPoint {
+    background-color: #FF40B1;
+    margin: -3vw 0 0 -2vw;
+}
+.section9
+{
+    display: none!important;
+}
+
+@media all and (max-width:1280px) {
+    .section2 {
+        margin: -17% 0 0;
+    }
+}
+
+@media all and (max-width:768px) {
+    .section9
+{
+    display: flex!important;
+}
+    header {
+        box-shadow: none;
+        background-color: #FFFF00!important;
+    }
+    .nav-pills
+    {
+       background-color: #FFFF00!important; 
+    }
+
+    .bluePoin {
+        width: 4vw;
+        height: 4vw;
+        left: -10%;
+    }
+
+    .section2 .box {
+        height: 33vw;
+        width: 45.3%;
+    }
+
+    .section2 {
+        padding: 0 15%;
+    }
+
+    .section2 .box .card {
+        max-width: 39.3vw;
+        height: 22.5vw;
+    }
+
+    .bluePoint,
+    .yellowPoint,
+    .pinkPoint {
+        width: 2.6vw;
+        height: 2.6vw;
+    }
+
+    .section2 .box a {
+        font-size: 2vw;
+    }
+
+    .section2 .box a img {
+        width: 3.6vw;
+        height: 3.6vw;
+    }
+
+    .top {
+        padding: 10.5% 0 14%;
+    }
+
+    .section2 {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .section2 {
+        margin: -23% 0 10%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .section2 {
+        margin: -17% 0 0;
+    }
+
+    .section1 {
+        height: 52px;
+    }
+
+    .section1 .wave {
+        background-size: cover;
+        height: 52px;
+        animation: wave 5s linear infinite;
+    }
+}
+
+@media (max-width: 375px) {}

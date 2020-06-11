@@ -1,0 +1,489 @@
+body {
+    overflow-x: hidden;
+}
+
+.section1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #C2E8F4;
+    padding: 6vw 18.4vw 4%;
+}
+
+.section2 {
+    width: 100%;
+    height: 143px;
+    position: relative;
+    background-color: #F5F5F4;
+}
+
+.section2 .wave {
+    background-image: url(../img/sec2bluewave.png);
+    width: 100%;
+    height: 143px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: wave 3s linear infinite;
+}
+
+.allBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 0 0;
+}
+
+.allBox .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 4vw 0 0;
+}
+
+.allBox .box:last-of-type {
+    margin: 0;
+}
+
+.allBox .box .img {
+    width: 16vw;
+    height: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.allBox .box .img img {
+    max-height: 100%;
+}
+
+.allBox .box a {
+    font-family: 'Gotham-Bold';
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section1 .darkBtn {
+    width: 14vw;
+    height: 3vw;
+    font-size: 0.8vw;
+    border-radius: 3vw;
+    padding: 1vw 3.8vw 1vw 2vw;
+    letter-spacing: 0.05vw;
+    background-position: 91%;
+    background-size: 12%;
+    background-repeat: no-repeat;
+    background-image: url(../img/plus.png);
+}
+
+.section1 .darkBtn:hover {
+    background-image: url(../img/plusHover.png);
+}
+
+
+.allBox a:hover {
+    text-decoration: none;
+}
+
+.section3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F4;
+    padding: 6vw 18.4vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.section3 .h1 {
+    text-align: center;
+}
+
+.section3 .tipBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3vw 0 0;
+}
+
+.section3 .tipBox:nth-of-type(2n) .pinkCircle {
+    margin: 0 0 0 1vw;
+}
+
+.section3 .tipBox:nth-of-type(2) .text {
+    text-align: right;
+    margin: 0 5vw 0 0;
+    padding: 6vw 0vw 6vw 5vw;
+}
+
+.section3 .tipBox:nth-of-type(3) .text {
+    padding: 6vw 6.3vw 6vw 0;
+}
+
+.section3 .tipBox:nth-of-type(4) .text {
+    border: none;
+    padding: 6vw 0vw 6vw 7vw;
+    margin: 0 5vw 0 0;
+}
+
+.section3 .tipBox .pinkCircle {
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FF40B1;
+    margin: 0 1vw 0 0;
+}
+
+.section3 .tipBox .img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section3 .tipBox img {
+    width: 16vw;
+}
+
+.section3 .tipBox .text {
+    width: 50%;
+    border-bottom: 0.22vw solid #EC008C;
+    margin: 4.2vw 0 0 5vw;
+    text-align: left;
+    padding: 2% 2.3vw 5vw 0;
+}
+
+.section4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6vw 18.4vw;
+}
+
+.allPlans {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 13.5% 0 0;
+}
+
+.planBox {
+    width: 38.5%;
+    height: 23vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 4.3%;
+    border-radius: 5vw;
+}
+
+.planBox .num {
+    font-size: 1.4vw;
+    font-family: 'Gotham-Bold';
+    width: 45%;
+    height: 18%;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background-color: rgba(191, 191, 191, 0.4);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3.8% 0;
+}
+
+.planBox .h1,
+.planBox .h2 {
+    font-size: 1.6vw;
+
+    letter-spacing: 0.6vw;
+    text-align: center;
+}
+
+.planBox a {
+    width: 45%;
+    font-size: 0.94vw;
+    font-family: 'GOTHAMROUNDED-BOOK';
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    padding: 0 0 0.3vw;
+}
+
+.planBox a img {
+    width: 0.7vw;
+
+}
+
+.section5 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 0 3vw 0vw;
+    overflow-x: hidden;
+}
+
+.section5 .sec5Box {
+    width: 67.3%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.section5 .darkBtn {
+    width: 17.6vw;
+    height: 3.5vw;
+    background-image: url(../img/whiteArrow.png);
+    background-repeat: no-repeat;
+    background-size: 6%;
+    background-position: 90%;
+    font-size: 1.1vw;
+    padding: 1vw 2vw 1vw 0px;
+    margin-top: 4.9vw;
+}
+
+.section5 .darkBtn:hover {
+    background-image: url(../img/arrowPlan.png);
+}
+
+.slider {
+    width: 100%;
+    height: 21.7vw;
+    margin: 0 -5vw 0 0;
+}
+
+.carousel-inner {
+    border-radius: 5vw 0 0 5vw;
+}
+
+.col-md-12 {
+    padding: 0;
+}
+
+.col-xs-4 {
+    width: 33.3%;
+    height: 21.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-xs-4 img {
+    width: 9vw;
+    padding: 0;
+}
+
+.col-xs-4:nth-of-type(2n) {
+    /*    width: 33.3%;*/
+}
+
+.carousel-control.right {
+    background-color: black;
+    color: white;
+    width: 4.4vw;
+    height: 4.4vw;
+    border-radius: 1vw;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 46%;
+    right: 97%;
+    background-image: url(../img/sliderArrow.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+}
+
+.row {
+    margin: 0;
+}
+
+
+.multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+}
+
+.multi-item-carousel .carousel-inner .active.left {
+    left: -33%;
+}
+
+.multi-item-carousel .carousel-inner .active.right {
+    left: 33%;
+}
+
+.multi-item-carousel .carousel-inner .next {
+    left: 33%;
+}
+
+.multi-item-carousel .carousel-inner .prev {
+    left: -33%;
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .multi-item-carousel .carousel-inner > .item {
+        -webkit-transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out left;
+        -webkit-transition: 500ms ease-in-out all;
+        transition: 500ms ease-in-out all;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+        -webkit-transform: none !important;
+        transform: none !important;
+    }
+}
+
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+    background-image: none;
+}
+
+.h1,
+.h2 {
+    margin: 0;
+    text-align: center;
+}
+
+@media all and (max-width:768px) {
+    .section5 {
+        padding: 0 0 11vw 0vw;
+    }
+
+    header {
+        box-shadow: none;
+        background-color: #C4EBF7 !important;
+    }
+
+    .nav-pills {
+        background-color: #C4EBF7 !important;
+    }
+
+    .allBox .box .img {
+        width: 25vw;
+        height: 23vw;
+    }
+
+    .section1 .darkBtn {
+        width: 24vw;
+        height: 6vw;
+        font-size: 1.8vw;
+        border-radius: 5vw;
+        padding: 1.4vw 4.8vw 1vw 2vw;
+        letter-spacing: 0.1vw;
+        background-position: 92%;
+    }
+
+    .darkBtn {
+        width: 20vw;
+        font-size: 1.3vw;
+        line-height: 0;
+    }
+
+    .section3 {
+        padding: 9.5vw 10vw 10vw;
+    }
+
+    .section3 .tipBox:nth-of-type(2) .text {
+        padding: 6vw 0vw 6vw 0vw;
+    }
+
+    .planBox {
+        width: 45%;
+        height: 29vw;
+    }
+
+    .carousel-control.right:before {
+        position: relative;
+        top: -0.2vw;
+        font-size: 2.1vw;
+    }
+
+    .section3 .tipBox .text {
+        width: 66%;
+    }
+
+    .section3 .tipBox img {
+        width: 25vw;
+    }
+
+    .section3 .tipBox .pinkCircle {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .section1 {
+        padding: 10vw 7.4vw 4%;
+    }
+
+    .planBox .num {
+        font-size: 2vw;
+    }
+
+    .planBox .h1,
+    .planBox .h2 {
+        font-size: 2.3vw;
+    }
+
+    .planBox a {
+        width: 54%;
+        font-size: 1.4vw;
+    }
+
+    .section5 .darkBtn {
+        width: 23.6vw;
+        height: 5.5vw;
+        background-size: 5%;
+        background-position: 91%;
+        font-size: 1.7vw;
+        padding: 1vw 2vw 1vw 0px;
+        margin-top: 4.9vw;
+    }
+}
+
+@media all and (max-width:425px) {
+
+    .section2 .wave {
+        background-size: cover;
+        height: 52px;
+        animation: wave 5s linear infinite;
+    }
+
+    .section3 br {
+        display: none;
+    }
+
+    .section2 {
+        height: 52px;
+    }
+
+    .section5,
+    .section3,
+    .section4 {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+}

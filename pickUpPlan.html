@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Foxtrot</title>
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/header_footer.css">
+    <link rel="stylesheet" href="style/btnAnimate.css">
+    <link rel="stylesheet" href="style/pickUp.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+       <div class="navLeft">
+        <a href="index.html"><img class='logo' src='img/logo-foxtrot.png'></a>
+        <div class="navbar">
+            <div class="dropdown">
+                <a class="dropbtn" href='index.html'>home</a>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">PRICING</a>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="whatTheFox.html">what the fox</a>
+            </div>
+            <div class="dropdown" data-toggle="modal" data-target=".bd-example-modal-xl">
+                <a class="dropbtn">use cases</a>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">RESOURCES</a>
+            </div>
+        </div>
+        </div>
+         <div class="nav__container">
+            <nav class="nav-main">
+                <ul class="nav nav-pills">
+                    <li>
+                        <a class="dropbtn home" href='index.html'>home</a>
+                    </li>
+                    <li>
+                        <a class="dropbtn PRICING">PRICING</a>
+                    </li>
+                    <li>
+                        <a class="dropbtn what" href="whatTheFox.html">what the fox</a>
+                    </li>
+                    <li>
+                        <a class="dropbtn case" href="cases.html">use cases</a>
+                    </li>
+                    <li>
+                        <a class="dropbtn resources">RESOURCES</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger">
+            <button class="btn__toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="searchBox">
+            <img class="searchImg" src="img/search.png">
+            <input type="text" class="searchInput" placeholder="search">
+        </div>
+    </header>
+
+    <div class="modalMenu modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" id="modal-xl">
+            <div class="modal-content">
+                <div class="dropdown-content">
+                    <div class="subMenuBox">
+                        <ul class="subMenu">
+                            <li><a href="CULTURE.html">
+                                    <div class="subBox">
+                                        <img src='img/icon1.png' class="subIcon">
+                                        <div class="text">
+                                            <h1>ARTS & CULTURE </h1>
+                                            <p>See how Foxtrot can elevate your gallery or museum.</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a href="Baby-tech.html">
+                                    <div class="subBox">
+                                        <img src='img/icon2.png' class="subIcon">
+                                        <div class="text">
+                                            <h1>BABY-TECH </h1>
+                                            <p>Check out how Foxtrot can create new revenue for your blog or vlog.</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a href="Edutech.html">
+                                    <div class="subBox">
+                                        <img src='img/icon3.png' class="subIcon">
+                                        <div class="text">
+                                            <h1>EDU-TECH</h1>
+                                            <p>See how Foxtrot can uplift your school, business or hotel</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a href="FOODBEVERAGES.html">
+                                    <div class="subBox">
+                                        <img src='img/icon1.png' class="subIcon">
+                                        <div class="text">
+                                            <h1>FOOD & BEVERAGES </h1>
+                                            <p>Watch how Foxtrot can boost your restaurant, grocery store or bar.</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a href="sport.html">
+                                    <div class="subBox">
+                                        <img src='img/icon2.png' class="subIcon">
+                                        <div class="text">
+                                            <h1>Sport</h1>
+                                            <p>Check out how Foxtrot can improve your sports club.</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a href="Hospitality.html">
+                                    <div class="subBox">
+                                        <img src='img/icon3.png' class="subIcon">
+                                        <div class="text">
+                                            <h1>RETAIL</h1>
+                                            <p>Watch how Foxtrot can increase your retail sales. </p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <a href="cases.html" class="seeAll">SEE ALL PRODUCTS <img src='img/arrowSeeAll.png'></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containerBox">
+        <h1 class="h1">Choose the plan that’s</h1>
+        <h2 class="h2">right for your team</h2>
+        <div class="allPlans">
+            <div class="planBox" style="background-color: #FFFF00" data-aos="fade-right" data-aos-duration="1000">
+                <p class="num">01</p>
+                <div>
+                    <h1 class="h1">STARTER</h1>
+                    <h2 class="h2">PACKAGE</h2>
+                </div>
+                <a data-toggle="modal" data-target="#exampleModal" data-whatever="STARTER" data-price="80" data-num="01" data-tittle='Excellent for independent companies.' data-color='#FFFF00' data-p1='10 Campaigns' data-p2='1 access point per campaign' data-p3='2000 scans' data-p4='none' data-circle='#9FDCF3'>CLICK TO FLIP <img src='img/arrowPlan.png'></a>
+            </div>
+            <div class="planBox" style="background-color: #C2E9F5" data-aos="fade-left" data-aos-duration="1000">
+                <p class="num">02</p>
+                <div>
+                    <h1 class="h1">BUSINESS</h1>
+                    <h2 class="h2">PACKAGE</h2>
+                </div>
+                <a data-toggle="modal" data-target="#exampleModal" data-whatever="BUSINESS" data-price="99" data-num="02" data-tittle='Suited for big or small businesses.' data-color='#C2E9F5' data-p1='100 Access Points' data-p2='20 000 scans' data-p3='monthly subscription' data-p4='none' data-circle='#FF40B1'>CLICK TO FLIP <img src='img/arrowPlan.png'></a>
+            </div>
+            <div class="planBox" style="background-color: #F1DCEB" data-aos="fade-right" data-aos-duration="1000">
+                <p class="num">03</p>
+                <div>
+                    <h1 class="h1">ENTERPRISE</h1>
+                    <h2 class="h2">PACKAGE</h2>
+                </div>
+                <a data-toggle="modal" data-target="#exampleModal" data-whatever="ENTERPRISE" data-price="POA" data-num="03" data-tittle='Ideal for a business chain.' data-color='#F1DCEB' data-p1='Unlimited Access Points' data-p2='Unlimited Scans' data-p3='Monthly Subscription Fee' data-p4='none' data-circle='#FFFF00'>CLICK TO FLIP <img src='img/arrowPlan.png'></a>
+            </div>
+            <div class="planBox" style="background-color: #FF40B1" data-aos="fade-left" data-aos-duration="1000">
+                <p class="num">04</p>
+                <div>
+                    <h1 class="h1">AGENCY</h1>
+                    <h2 class="h2">PACKAGE</h2>
+                </div>
+                <a data-toggle="modal" data-target="#exampleModal" data-whatever="AGENCY" data-price="" data-num="04" data-tittle='Perfect for an independent agency.' data-color='#FF40B1' data-p1='1 Access Point Per Campaign' data-p2='100 Campaigns' data-p3='Unlimited scans' data-p4='flex' data-circle='#9FDCF3'>CLICK TO FLIP <img src='img/arrowPlan.png'></a>
+            </div>
+        </div>
+
+        <h1 class="h1">Frequently asked</h1>
+        <h2 class="h2">Questions</h2>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <p class="collapseTittle">HOW DOES FOXTROT WORK</p>
+                    <span></span>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        When using Foxtrot to build your campaign, simply register, purchase your plan and start building your campaign with an easy to use drag and drop builder. Install Foxtrot onto your website with a code injection or an overlay plug-in. When using Foxtrot once your campaign is completed, find the Foxtrot button on your site, open your camera, scan an object/screen which will lead you to your campaign page.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <p class="collapseTittle">WHAT’S ALL THE POSSIBILITIES?</p><span></span>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Foxtrot enables you to define your campaigns with unlimited design options. The limit of your AR power depends on which package you choose and how you choose to create your campaign.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <p class="collapseTittle">WHAT ARE MY PAYMENT OPTIONS?</p><span></span>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        We accept all major credit cards, PayPal, and (in select countries) direct debit/wire payment. We also support transactions in a range of currencies.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header collapsed" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <p class="collapseTittle"> RESTRICTIONS?</p><span></span>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        In order to provide you with secure data and personal information, it’s a requirement that you have an SSL certificate on your website to register and purchase a Foxtrot package.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header collapsed" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <p class="collapseTittle">HOW TO PURCHASE?</p><span></span>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        Sign up through the website using your email address, enter the OPT (One Time Pin) you were emailed, enter your details to register your account, choose your package and payment method, and now you can start building your AR campaign.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <h1 class="h1">Choose the plan that’s</h1>
+        <h2 class="h2">right for your team</h2>
+                <div class="modalBox">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="planBox" style="background-color: #FFFF00" id='planBox'>
+                        <p class="num"></p>
+                        <div>
+                            <h1 class="h1"></h1>
+                            <h2 class="h2">PACKAGE</h2>
+                        </div>
+                        <div class="priceBox">
+                            <p></p>
+                        </div>
+                        <div class="btnCont">
+                            <a>
+                                <div class="darkBtn"><span>Purchase PLAN</span></div>
+                            </a>
+                            <i class="btnCircle"></i>
+                        </div>
+                        <span class="tittleS"></span>
+                        <div class="whiteCircle"></div>
+
+                    </div>
+                    <div class="planBox" style="background-color: #FFFF00">
+                        <div class="whiteCircleReverce"></div>
+                        <div class="table">
+                            <div class="cmlLeft">
+                                <p><img src='img/Checkbox.png'></p>
+                                <p class="two"><img src='img/Checkbox.png'></p>
+                                <p><img src='img/Checkbox.png'></p>
+                                <p class="p4" style="  margin: 0 0 20%;"><img src='img/Checkbox.png'></p>
+                            </div>
+                            <div class="cmlRight">
+                                <div><i class="circleL"></i>
+                                    <p class="p1"></p>
+                                </div>
+                                <div class="two"><i class="circleL"></i>
+                                    <p class="p2"></p>
+                                </div>
+                                <div><i class="circleL"></i>
+                                    <p class="p3"></p>
+                                </div>
+                                <div class="p4"><i class="circleL"></i>
+                                    <p>Subscription based (3/6/12 months)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whiteCircle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+         <section class="section9">
+            <h1 class="h1">START PLAYING WITH FOXTROT</h1>
+            <div class="inputBox">
+                <input type="text" placeholder="EMAIL:" class="email">
+                <a>
+                    <div class="darkBtn footerBtn"><span>Sign up</span></div>
+                </a>
+            </div>
+        </section>
+        <div class="footerBox">
+            <div class="boxLeft">
+                <a class="footerText" href="pickUpPlan.html">
+                    <p>SEE ALL PRODUCTS</p> <img src='img/footerArrow.png' class="footerArrow">
+                </a>
+                <a class="footerText">
+                    <p>READ MORE</p> <img src='img/footerArrow.png' class="footerArrow">
+                </a>
+                <a class="footerText" href="cases.html">
+                    <p>USE CASES</p> <img src='img/footerArrow.png' class="footerArrow">
+                </a>
+            </div>
+            <div class="footerMenu">
+                <div class="clm">
+                    <h1>Product</h1>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                </div>
+                <div class="clm">
+                    <h1>PRICING</h1>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                </div>
+                <div class="clm">
+                    <h1>SUPPORT</h1>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                </div>
+                <div class="clm">
+                    <h1>CONTACT</h1>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                    <p>LOREM IPSUM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footerBox">
+            <img class="footerLogo" src="img/logo-foxtrot.png">
+            <div class="footerRight">
+                <div class="cml">
+                    <h1>Sign up for the newsletter</h1>
+                    <div class="inputBox">
+                        <input type="text" placeholder="EMAIL:" class="email">
+                        <a>
+                            <div class="darkBtn footerBtn"><span>Sign up</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cml">
+                    <h1>FOLLOW US</h1>
+                    <div class="socBox">
+                        <a>
+                            <div class="blackBox"><img src='img/facebook.png'></div>
+                        </a>
+                        <a>
+                            <div class="blackBox"><img src='img/twitter.png'></div>
+                        </a>
+                        <a>
+                            <div class="blackBox"><img src='img/insta.png'></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footerBox">
+            <p>© COPYRIGHT 2020 | FOXTROT | ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        $('.card').on('shown.bs.collapse', function() {
+            $(this).find($('span')).addClass('span');
+            $(this).find($('.collapseTittle')).css({
+                'font-family': 'Gotham_Rounded_Bold'
+            })
+
+        });
+        $('.card').on('hidden.bs.collapse', function() {
+            $('span').removeClass('span');
+            $(this).find($('.collapseTittle')).css({
+                'font-family': 'GOTHAMROUNDED-BOOK'
+            })
+        })
+
+    </script>
+    <script src="script/modal.js"></script>
+     <script src="script/menu.js"></script>
+</body>
+
+</html>
